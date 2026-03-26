@@ -5,9 +5,17 @@ body {
     background-color: #ddd;
 }
 
+h1 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
 div {
-    height: 550px;
-    width: 350px;
+    height: 90%;
+    width: 27%;
     background-color: white;
     border-radius: 8px;
     gap: 4px;
@@ -26,7 +34,7 @@ header {
     padding: 10px;
     border-radius: 8px 8px 0 0;
     line-height: 3;
-    background: linear-gradient( 135deg, #667eea,#764ba2);
+    background: linear-gradient(135deg, #667eea, #764ba2);
 }
 
 article {
@@ -42,19 +50,22 @@ section {
     width: 100%;
     height: 40px;
 }
+
 .butt {
     height: 50px;
     grid-area: bu;
-    background: linear-gradient(135deg,#667eea,#764ba2);
+    background: linear-gradient(135deg, #667eea, #764ba2);
     color: white;
     border: none;
     border-radius: 5px;
 }
+
 .ch {
     display: flex;
     justify-self: start;
     grid-area: che;
 }
+
 .lin {
     font-size: 12px;
     display: flex;
@@ -65,9 +76,9 @@ section {
 .ts {
     gap: 10px;
     display: grid;
-    grid-template-areas: 
-    "che . linke"
-    "bu bu bu";
+    grid-template-areas:
+        "che . linke"
+        "bu bu bu";
 }
 
 .remme {
@@ -84,12 +95,14 @@ section {
 .or-section {
     display: flex;
     gap: 5px;
+    justify-content: center;
 }
 
 .divider-line {
+    display: flex;
     background-color: #ddd;
     height: 1px;
-
+    justify-self: stretch;
 }
 
 .button-sec {
@@ -117,4 +130,45 @@ a,
 .reg-link {
     color: #667eea;
     text-decoration: none;
+}
+
+select {
+    border: none;
+    background-color: #ddd;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.terms-of-policy {
+    font-size: 12px;
+}
+
+input:focus {
+  border-color: #3498db;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+input:disabled {
+  background: #f0f0f0;
+  color: #aaa;
+  cursor: not-allowed;
+}
+
+.butt:hover {
+    background: linear-gradient(135deg, #425eda, #740cdb);
+    transform: translate(0, -1px)
+}
+
+.butt:active {
+    background: linear-gradient(135deg, #93a7ff, #d9b3ff);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+label {
+    font-weight: bold;
 }

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>I've been dealing with some problems.</title>
+    <title>Login</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,22 +20,22 @@
             <h1>Student Login</h1>
             <p> Access your student account</p>
         </header>
-        <section class="E-section">
+        <form action="/api/Login" method="post" class="E-section">
             <article>
-                <h3>Email or Student ID</h3>
-                <input type="Text" placeholder="Enter your email or student ID" class="em">
+                <label for="e-mail-log">Email or Student ID</label>
+                <input type="email" id="e-mail-log" name="email" placeholder="Enter your email or student ID" class="em">
             </article>
             <article>
-                <h3>Password</h3>
-                <input type="text" placeholder="Enter your password" class="em">
+                <label for="password-log">Password</label>
+                <input type="password" id="password-log" name="password" placeholder="Enter your password" class="em">
             </article>
             <article class="ts">
-                <input type="checkbox" class="ch">
+                <input type="checkbox" class="ch" name="remember">
                 <label for="checkbox" class="remme">Remember me</label>
                 <a href="" class="lin">Forgot password?</a>
-                <button class="butt">Log in</button>
+                <button type="submit" class="butt">Log in</button>
             </article>
-        </section>
+        </form>
         <section class="end-sec">
             <article class="or-section">
                 <div class="divider-line"></div>
@@ -63,8 +63,8 @@
                     </svg></button>
             </article>
             <h5>
-                Don't have an account?
-                <a href="" class="reg-link">Register</a>
+                <p>Don't have an account?</p>
+                <a href="register.html" class="reg-link">Register</a>
             </h5>
         </section>
     </div>
