@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registering your laziness here</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div>
+        <header>
+            <h1>Student Registration</h1>
+            <p> Access your student account</p>
+        </header>
+        <form action="/api/register" method="post" class="E-section">
+            <article>
+                <label for="">Full name</label>
+                <input type="text" id="full name" name="fullName" placeholder="Enter your full name" class="em">
+            </article>
+            <article>
+                <label for="E-mail">E-mail</label>
+                <input type="email" id="E-mail" name="email" placeholder="Enter your Email adress" class="em">
+            </article>
+            <article>
+                <label for="student-id">Student ID</label>
+                <input type="text" id="student-id" name="student-id" placeholder="Enter your student ID" class="em">
+            </article>
+            <article>
+                <label for="prog-sel">Select program</label>
+                <select id="prog-sel" name="program">
+                    <option value="">Select your program</option>
+                    <option value="IT">Computer Science</option>
+                    <option value="Engeneering">Engineering</option>
+                    <option value="Business">Business</option>
+                    <option value="Arts">Arts & Humanities</option>
+                    <option value="Science">Science</option>
+                </select>
+            </article>
+            <article>
+                <label for="password-cr">Create password</label>
+                <input type="password" id="password-cr" name="password" placeholder="Create a password" class="em">
+            </article>
+            <article>
+                <label for="password-con">Confirm password</label>
+                <input type="password" id="password-con" name="password" placeholder="Condirm your password" class="em">
+            </article>
+            <article class="ts">
+                <input type="checkbox" name="terms" class="ch">
+                <label for="checkbox" class="terms-of-policy">I agree to the terms of service and privacy policy</label>
+                <button class="butt">Create account</button>
+            </article>
+        </form>
+        <section>
+            <article>
+                <h5>
+                    <p>Already have an account?</p>
+                    <a href="index.html" class="reg-link">Log in</a>
+                </h5>
+            </article>
+        </section>
+</body>
+
+</html>
